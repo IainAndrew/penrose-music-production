@@ -1,0 +1,92 @@
+// browse happy
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+//////////////////////////
+@import "fonts/fonts";
+@phoenix:'phoenixscriptflfregular';
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size:16px;
+}
+.main-splash {
+    min-width:100%;
+    min-height:100%;
+    padding:0;
+}
+#video-background { 
+    position: fixed;
+    top: 0px; 
+    right: 0px; 
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto; 
+    overflow: hidden;
+    z-index:-100;
+}
+.spacer {
+    background:black;
+    opacity:0.3;
+    min-height:100%;
+    min-width:100%;
+    z-index:-99;
+}
+header {
+    position:fixed;
+    left:50%;
+    margin-left:-35%;
+    margin-top:10%;
+    z-index:-98;
+    text-align:center;
+    h1 {
+        color:white;
+        &:first-child {
+            font-family:@phoenix;
+            font-weight:normal;
+            font-size:13em;
+            margin-left:-0.2em;
+        }
+        &:nth-child(2) {
+            font-family:futura;
+            letter-spacing:25px;
+            font-weight:100;
+            font-size:3em;
+        }
+    }
+}
+.scroll-down {
+    width:5rem;
+    height:5rem;
+    border-radius:100%;
+    color:black;
+    background-color:white;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-2.5rem;
+    margin-bottom:-2.5rem;
+    text-align:center;
+    span {
+        text-align:center;
+        font-size:2em;
+        padding-top:0.2em;
+    }
+}
+.content {
+    width:100%;
+    left:0;
+    top:0;
+    background-color:white;
+    color:black;
+    font-family:futura;
+    padding:10em;
+}
