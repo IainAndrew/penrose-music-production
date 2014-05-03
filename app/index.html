@@ -27,6 +27,7 @@
         <![endif]-->
 
 				<div class="container main-splash">
+          <!--
           <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
               <div class="navbar-header">
@@ -48,6 +49,7 @@
               </div>
             </div>
           </div>
+        -->
 					<video class="video-background" autoplay="autoplay" preload="auto" loop muted> 
 						<source type="video/mp4" src="video/meter.mp4"/>
 						<source type="video/ogg" src="video/meter.ogv"/>
@@ -98,10 +100,39 @@
                   <p class="text-center">Ben Crutchfield</p>
               </div>
           </div>
+          <div class="row">
+            <div class="col-xs-12" id="player">
+              
+            </div>
+          </div>
         </div>
 
 
-
+        <!-- toneden player -->
+        <script>
+            (function() {
+                var script = document.createElement("script");
+                
+                script.type = "text/javascript";
+                script.async = true;
+                script.src = "//sd.toneden.io/production/toneden.loader.js"
+                
+                var entry = document.getElementsByTagName("script")[0];
+                entry.parentNode.insertBefore(script, entry);
+            }());
+            
+            ToneDenReady = window.ToneDenReady || [];
+            ToneDenReady.push(function() {
+                // Modify the dom and urls parameters to position
+                // your player and select tracks/sets/artists to play.
+                ToneDen.player.create({
+                    dom: "#player",
+                    urls: [
+                        "https://soundcloud.com/penrose-music-production"
+                    ]
+                });
+            });
+        </script>
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>

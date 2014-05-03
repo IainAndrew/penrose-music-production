@@ -32,9 +32,6 @@ body {
   min-height: 100%;
   padding: 0;
 }
-.navbar-default {
-  background-color: white;
-}
 .video-background {
   position: fixed;
   top: 0px;
