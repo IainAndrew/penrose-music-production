@@ -50,29 +50,38 @@ body {
   min-width: 100%;
   z-index: -99;
 }
-/*header {
-    position:fixed;
-    left:50%;
-    margin-left:-32%;
-    margin-top:10%;
-    z-index:-98;
-    text-align:center;
-    h1 {
-        color:white;
-        &:first-child {
-            font-family:@phoenix;
-            font-weight:normal;
-            font-size:10em;
-            margin-left:-0.2em;
-        }
-        &:nth-child(2) {
-            font-family:futura;
-            letter-spacing:30px;
-            font-weight:100;
-            font-size:2em;
-        }
-    }
-}*/
+.navbar-default {
+  background-color: transparent !important;
+  border: 0;
+  font-family: 'open_sanslight';
+}
+.navbar-default .navbar-header {
+  background-color: white;
+}
+.navbar-default .navbar-collapse {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .navbar-default .navbar-collapse {
+    background-color: white;
+    border: 0;
+  }
+}
+.navbar-default .navbar-collapse .nav.navbar-nav {
+  display: inline-block;
+  float: none;
+}
+@media (max-width: 768px) {
+  .navbar-default .navbar-collapse .nav.navbar-nav li a {
+    color: black;
+  }
+}
+.navbar-default .navbar-toggle span.icon-bar {
+  background-color: #7a34b1;
+}
+.navbar-default .navbar-toggle:focus {
+  outline: none;
+}
 .header {
   position: fixed;
   z-index: -98;
@@ -115,7 +124,7 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  padding-top: 10%;
+  padding: 8%;
   background-color: white;
   font-family: 'open_sanslight';
 }
@@ -129,13 +138,19 @@ body {
   font-size: 2em;
   font-family: 'open_sanslight';
 }
-.intro img {
+.intro-text {
+  margin-bottom: 2em;
+}
+.team {
+  margin-bottom: 2em;
+}
+.team img {
   width: 60%;
   margin-bottom: 1rem;
   transition: transform 0.5s, filter 0.5s;
   -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.5s;
 }
-.intro img:hover {
+.team img:hover {
   transform: scale(1.05);
   -ms-transform: scale(1.05);
   /* IE 9 */
@@ -153,8 +168,27 @@ body {
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+.team .enda-img {
+  float: left;
+}
+.team .enda-text {
+  float: right;
+}
+.team .ben-img {
+  float: right;
+}
+.team .ben-text {
+  float: left;
+}
+.team .enda-text,
+.team .ben-text {
+  margin-top: 10%;
+}
 .desaturate {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+#player {
+  margin-bottom: 200px;
 }
