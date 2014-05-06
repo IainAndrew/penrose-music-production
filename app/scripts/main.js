@@ -10,3 +10,22 @@ $(function() {
 		$(".read-more-ben").stop().animate({opacity:0}, {duration:500});
 	});
 });
+
+if (window.innerWidth > 768) {
+	$('.about-us').waypoint(function(direction) {
+		if (direction === "down") {
+			$(".navbar-default").addClass("navbar-scroll-about");
+			$(".navbar-nav li a").css("color", "#424242");
+		} else if (direction === "up") {
+			$(".navbar-default").removeClass("navbar-scroll-about");
+			$(".navbar-nav li a").css("color", "#FBF7E4");
+		}
+	});
+	$('.services-rates').waypoint(function(direction) {
+		if (direction === "down") {
+			$(".navbar-default").addClass("navbar-scroll-services");
+		} else if (direction === "up") {
+			$(".navbar-default").removeClass("navbar-scroll-services");
+		}
+	});
+}
