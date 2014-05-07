@@ -15,17 +15,19 @@ if (window.innerWidth > 768) {
 	$('.about-us').waypoint(function(direction) {
 		if (direction === "down") {
 			$(".navbar-default").addClass("navbar-scroll-about");
-			$(".navbar-nav li a").css("color", "#424242");
+			$(".navbar-nav li a").css("color", "black");
 		} else if (direction === "up") {
 			$(".navbar-default").removeClass("navbar-scroll-about");
-			$(".navbar-nav li a").css("color", "#FBF7E4");
+			$(".navbar-nav li a").css("color", "white");
 		}
 	});
 	$('.services-rates').waypoint(function(direction) {
 		if (direction === "down") {
 			$(".navbar-default").addClass("navbar-scroll-services");
+			$(".navbar-nav li a").css("color", "white");
 		} else if (direction === "up") {
 			$(".navbar-default").removeClass("navbar-scroll-services");
+			$(".navbar-nav li a").css("color", "black");
 		}
 	});
 }

@@ -62,14 +62,14 @@ a:visited {
   border: 0;
 }
 .navbar-default .navbar-header {
-  background-color: #FBF7E4;
+  background-color: white;
 }
 .navbar-default .navbar-collapse {
   text-align: center;
 }
 @media (max-width: 768px) {
   .navbar-default .navbar-collapse {
-    background-color: #FBF7E4;
+    background-color: white;
     border: 0;
   }
 }
@@ -79,20 +79,20 @@ a:visited {
 }
 @media (max-width: 768px) {
   .navbar-default .navbar-collapse .nav.navbar-nav li a {
-    color: #424242;
+    color: #1ec1a6;
   }
 }
 .navbar-default .navbar-toggle span.icon-bar {
-  background-color: #7a34b1;
+  background-color: #1ec1a6;
 }
 .navbar-default .navbar-toggle:focus {
   outline: none;
 }
 .navbar-scroll-about {
-  background-color: #FBF7E4 !important;
+  background-color: white !important;
 }
 .navbar-scroll-services {
-  background-color: #E7E8D1 !important;
+  background-color: #00a388 !important;
 }
 .header {
   position: fixed;
@@ -101,13 +101,13 @@ a:visited {
   top: 30%;
 }
 .header .header-top h1 {
-  color: #FBF7E4;
+  color: white;
   font-family: 'phoenixscriptflfregular';
   font-weight: normal;
   font-size: 6em;
 }
 .header .header-bottom h1 {
-  color: #FBF7E4;
+  color: white;
   font-family: futura;
   letter-spacing: 0.7em;
   font-weight: 100;
@@ -117,8 +117,8 @@ a:visited {
   width: 5rem;
   height: 5rem;
   border-radius: 100%;
-  color: #424242;
-  background-color: #FBF7E4;
+  color: #00a388;
+  background-color: white;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -137,14 +137,14 @@ a:visited {
   left: 0;
   top: 0;
   padding: 8%;
-  background-color: #FBF7E4;
+  background-color: white;
   font-family: 'open_sanslight';
 }
 .about-us .tagline {
   margin-bottom: 2rem;
 }
 .about-us .tagline h3 {
-  color: #424242;
+  color: #00a388;
   text-align: center;
   font-weight: normal;
   font-size: 2em;
@@ -200,7 +200,7 @@ a:visited {
 .team .read-more-ben {
   position: absolute;
   top: 30%;
-  background-color: #FBF7E4;
+  background-color: white;
   width: 87%;
   height: 3rem;
   text-align: center;
@@ -210,8 +210,10 @@ a:visited {
   font-family: futura;
 }
 .services-rates {
-  background-color: #E7E8D1;
+  background-color: #00a388;
   width: 100%;
+  color: white !important;
+  padding: 8%;
 }
 .services-rates h2 {
   font-family: 'open_sanslight';

@@ -10,7 +10,11 @@
 @import "fonts/fonts";
 @phoenix:'phoenixscriptflfregular';
 @open: 'open_sanslight';
-@purple: #7A34B1;
+@orange: #FF6138;
+@yellow: #FFFF9D;
+@lightgreen: #BEEB9F;
+@darkgreen: #79BD8F;
+@turq: #00A388;
 
 html, body {
     height: 100%;
@@ -51,12 +55,12 @@ a, a:hover, a:visited {
     background-color:transparent;
     border:0;
     .navbar-header {
-        background-color:#FBF7E4;
+        background-color:white;
     }
     .navbar-collapse {
         text-align:center;
         @media (max-width: 768px) {
-            background-color:#FBF7E4;
+            background-color:white;
             border:0;
         }
         .nav.navbar-nav {
@@ -64,14 +68,14 @@ a, a:hover, a:visited {
             float:none;
             @media (max-width: 768px) {
                 li a {
-                    color:#424242;
+                    color:@turq + 30;
                 }
             }
         }
     }
     .navbar-toggle {
         span.icon-bar {
-            background-color:@purple;
+            background-color:@turq + 30;
         }
         &:focus {
             outline:none;
@@ -79,10 +83,10 @@ a, a:hover, a:visited {
     }
 }
 .navbar-scroll-about {
-    background-color:#FBF7E4 !important;
+    background-color:white !important;
 }
 .navbar-scroll-services {
-    background-color:#E7E8D1 !important;
+    background-color:@turq !important;
 }
 .header {
     position:fixed;
@@ -91,7 +95,7 @@ a, a:hover, a:visited {
     top:30%;
     .header-top {
         h1 {
-            color:#FBF7E4;
+            color:white;
             font-family:@phoenix;
             font-weight:normal;
             font-size:6em;
@@ -99,7 +103,7 @@ a, a:hover, a:visited {
     }
     .header-bottom {
         h1 {
-            color:#FBF7E4;
+            color:white;
             font-family:futura;
             letter-spacing:0.7em;
             font-weight:100;
@@ -111,8 +115,8 @@ a, a:hover, a:visited {
     width:5rem;
     height:5rem;
     border-radius:100%;
-    color:#424242;
-    background-color:#FBF7E4;
+    color:@turq;
+    background-color:white;
     position:absolute;
     bottom:0;
     left:50%;
@@ -133,12 +137,12 @@ a, a:hover, a:visited {
     left:0;
     top:0;
     padding:8%;
-    background-color:#FBF7E4;
+    background-color:white;
     font-family:@open;
     .tagline {
         margin-bottom:2rem;
         h3 {
-            color:#424242;
+            color:@turq;
             text-align:center;
             font-weight:normal;
             font-size:2em;
@@ -186,7 +190,7 @@ a, a:hover, a:visited {
     .read-more-enda, .read-more-ben {
         position:absolute;
         top:30%;
-        background-color:#FBF7E4;
+        background-color:white;
         width:87%;
         height:3rem;
         text-align:center;
@@ -199,8 +203,10 @@ a, a:hover, a:visited {
 // SERVICES RATES
 //===========================================
 .services-rates {
-    background-color:#E7E8D1;
+    background-color:@turq;
     width:100%;
+    color:white !important;
+    padding:8%;
     h2 {
         font-family:@open;
         text-align:center;
