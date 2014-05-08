@@ -219,3 +219,13 @@ a:visited {
   font-family: 'open_sanslight';
   text-align: center;
 }
+.services-rates h3 {
+  font-family: 'open_sanslight';
+  text-align: center;
+}
+.our-sounds {
+  background-color: #beeb9f;
+  width: 100%;
+  color: #79bd8f !important;
+  padding: 8%;
+}
