@@ -31,3 +31,10 @@ if (window.innerWidth > 768) {
 		}
 	});
 }
+$(".our-sounds").waypoint(function(direction) {
+	if (direction === "down") {
+		$(".footer").show();
+	} else if (direction === "up") {
+		$(".footer").hide();
+	}
+});

@@ -228,4 +228,15 @@ a:visited {
   width: 100%;
   color: #79bd8f !important;
   padding: 8%;
+  margin-bottom: 20rem;
+}
+.footer {
+  height: 20rem;
+  background-color: #79bd8f;
+  width: 100%;
+  padding: 8%;
+  position: fixed;
+  bottom: 0;
+  z-index: -98;
+  display: none;
 }
