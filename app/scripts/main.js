@@ -22,6 +22,7 @@ function readMore (link, readmore) {
 readMore( $(".enda a"), $(".read-more-enda") );
 readMore( $(".ben a"), $(".read-more-ben") );
 
+/*
 if (window.innerWidth > 768) {
 	$('.about-us').waypoint(function(direction) {
 		if (direction === "down") {
@@ -42,6 +43,26 @@ if (window.innerWidth > 768) {
 		}
 	});
 }
+*/
+
+if (window.innerWidth > 768) {
+	function navWaypoints(section, scrollClass, newColor, oldColor) {
+		section.waypoint(function(direction) {
+			if (direction === "down") {
+				$(".navbar-default").addClass(scrollClass);
+				$(".navbar-nav li a").css("color", newColor);
+			} else if (direction === "up") {
+				$(".navbar-default").removeClass(scrollClass);
+				$(".navbar-nav li a").css("color", oldColor);
+			}
+		});
+	}
+}
+
+navWaypoints( $('.about-us'), "navbar-scroll-about", "black", "white" );
+navWaypoints( $('.services-rates'), "navbar-scroll-services", "white", "black" );
+
+
 $(".our-sounds").waypoint(function(direction) {
 	if (direction === "down") {
 		$(".footer").show();
