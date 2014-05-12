@@ -59,8 +59,18 @@ if (window.innerWidth > 768) {
 	}
 }
 
-navWaypoints( $('.about-us'), "navbar-scroll-about", "black", "white" );
-navWaypoints( $('.services-rates'), "navbar-scroll-services", "white", "black" );
+navWaypoints( $(".about-us"), "navbar-scroll-about", "black", "white" );
+navWaypoints( $(".services-rates"), "navbar-scroll-services", "white", "black" );
+navWaypoints( $(".our-sounds"), "navbar-scroll-sounds", "black", "white" );
+
+function scrollTo (click, goto) {
+	click.click(function() {
+		$('html, body').animate({scrollTop:goto}, 1000, 'easeInExpo');
+		return false;
+	});
+}
+
+scrollTo( $(".scroll-down"), $(".about-us") );
 
 
 $(".our-sounds").waypoint(function(direction) {

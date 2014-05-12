@@ -94,6 +94,9 @@ a:visited {
 .navbar-scroll-services {
   background-color: #00a388 !important;
 }
+.navbar-scroll-sounds {
+  background-color: #beeb9f !important;
+}
 .header {
   position: fixed;
   z-index: -98;
