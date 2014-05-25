@@ -230,9 +230,9 @@ a:visited {
   text-align: center;
 }
 .our-sounds {
-  background-color: #beeb9f;
+  background-color: #f1c40f;
   width: 100%;
-  color: #79bd8f !important;
+  color: white;
   padding: 8%;
   margin-bottom: 20rem;
   box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
@@ -246,8 +246,9 @@ a:visited {
   z-index: 100;
 }
 .our-sounds #player .player {
-  border: 10px solid white;
+  border: 0.6rem solid white;
   border-radius: 1rem;
+  box-shadow: -10px -5px 0 #ababab;
 }
 .our-sounds #player .player:before {
   content: " ";
