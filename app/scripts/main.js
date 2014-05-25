@@ -29,7 +29,7 @@ navWaypoints( $(".our-sounds"), "navbar-scroll-sounds", "black", "white" );
 
 function scrollTo (click, goto) {
 	click.click(function() {
-	    $('html, body').animate({scrollTop:goto.offset().top}, 300);
+	    $('html, body').animate({scrollTop:goto.offset().top}, 600);
 	    return false;
 	});
 }

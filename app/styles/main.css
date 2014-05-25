@@ -239,6 +239,33 @@ a:visited {
   -moz-box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.5);
 }
+.our-sounds #player {
+  max-width: 30rem;
+}
+.our-sounds #player .header {
+  z-index: 100;
+}
+.our-sounds #player .player {
+  border: 10px solid white;
+  border-radius: 1rem;
+}
+.our-sounds #player .player:before {
+  content: " ";
+  background-color: white;
+  height: 5rem;
+  width: 100%;
+}
+.our-sounds #player .player:after {
+  background-color: white;
+  height: 5rem;
+  width: 100%;
+  font-family: "FontAwesome";
+  content: "\f10c";
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  text-shadow: 1px 0px 0px #000000;
+}
 .footer {
   height: 20rem;
   background-color: #79bd8f;

@@ -233,6 +233,33 @@ a, a:hover, a:visited {
     box-shadow: 0 20px 20px -20px rgba(0,0,0,0.5);
     -moz-box-shadow: 0 20px 20px -20px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0 20px 30px -20px rgba(0,0,0,0.5);
+    #player {
+        max-width:30rem;
+        .header {
+            z-index:100;
+        }
+        .player {
+            border:10px solid white;
+            border-radius:1rem;
+            &:before {
+                content:" ";
+                background-color:white;
+                height:5rem;
+                width:100%;
+            }
+            &:after {
+                background-color:white;
+                height:5rem;
+                width:100%;
+                font-family:"FontAwesome";
+                content: "\f10c";
+                color:white;
+                text-align:center;
+                font-size:4em;
+                text-shadow: 1px 0px 0px rgba(0, 0, 0, 1);
+            }
+        }
+    }
 }
 // FOOTER
 //========================================
